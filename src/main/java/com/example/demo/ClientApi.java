@@ -1,6 +1,10 @@
 package com.example.demo;
 
+import com.example.demo.dao.entity.Client;
+import com.example.demo.manager.ClientManager;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 
@@ -17,8 +21,8 @@ public class ClientApi {
         this.clientManager = clientManager;
     }
 
-    @GetMapping("/getAllClients")
-    public Iterable<Client> getAll()
+    @GetMapping("/getallclients")
+    public @ResponseBody Iterable<Client> getAll()
     {
         return clientManager.findAll();
     }

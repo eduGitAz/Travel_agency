@@ -1,5 +1,7 @@
-package com.example.demo;
+package com.example.demo.manager;
 
+import com.example.demo.dao.entity.Client;
+import com.example.demo.dao.ClientRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
