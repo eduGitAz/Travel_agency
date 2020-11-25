@@ -1,12 +1,9 @@
-package com.example.demo.api;
+package com.example.demo;
 
-import com.example.demo.dao.entity.Client;
-import com.example.demo.manager.ClientManager;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.ArrayList;
-import java.util.List;
+
 import java.util.Optional;
 
 @RestController
